@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+body {
+  background-image: url('sounds/background.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#title-container {
+  text-align: center;
+  margin-top: 50px; /* Add some space from the top */
+  z-index: 20; /* Ensure it's above other elements */
+}
+
+#title {
+  font-size: 7rem; /* Make the title much larger */
+  font-weight: bold; /* Bold the title */
+  margin: 0;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Add shadow for contrast */
+}
+
+#title .dash {
+  color: black;
+}
+
+#title .dot {
+  color: red;
+}
+
+#title .io {
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Ensure the elements stack vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('sounds/background.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#username-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#game-container {
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+#username-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adjusted gap between the input and button */
+  width: 100%; 
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+#username-container input {
+  font-size: 24px; /* Increase font size */
+  padding: 15px 20px; /* Increase padding for input */
+  width: 100%; /* Make input take the full width */
+  max-width: 400px; /* Optional: set max-width for input */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #007bff; /* Optional: add border for visual appeal */
+}
+
+#username-container button {
+  font-size: 24px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#game-container {
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#game-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#leaderboard {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 15px;  /* Reduced padding */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leaderboard h3 {
+  font-size: 1.3rem;  /* Slightly smaller font size */
+  margin-bottom: 10px;  /* Reduced margin */
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+#score-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+#score-list li {
+  padding: 8px;  /* Reduced padding */
+  margin-bottom: 6px;  /* Reduced margin */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;  /* Slightly smaller font size */
+  color: #555;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#score-list li:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+#score-list li .username {
+  font-weight: bold;
+}
+
+#score-list li .score {
+  color: #333;
+}
+
+#game-area {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#progress-container {
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  transition: width 1s linear;
+}
+
+#dot-container {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+#dot {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.black-dot {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+#game-info {
+  text-align: center;
+  margin-top: 20px;
+  z-index: 10;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#score-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#score-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
